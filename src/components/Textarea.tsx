@@ -2,19 +2,21 @@
  * A type-safe React wrapper for the HTML `<textarea>` element.
  *
  * @remarks
- * This component accepts all native HTML textarea attributes and forwards refs to the underlying DOM element.
- * It provides full TypeScript support for all standard textarea properties including value, onChange, rows, cols, etc.
+ * Multi-line text input.
+ *
+ * - Always pair with Label
+ * - Use rows/cols or CSS for sizing
+ * - Great for comments, descriptions, messages
+ *
+ * **Pro Tips:**
+ * - Set rows for initial height
+ * - Use maxLength for validation
  *
  * @example
  * ```tsx
- * <Textarea
- *   value={message}
- *   onChange={(e) => setMessage(e.target.value)}
- *   placeholder="Enter your message"
- *   rows={5}
- * />
+ * <Textarea rows={5} placeholder="Enter your message..." />
  *
- * <Textarea name="description" required maxLength={500} />
+ * <Textarea maxLength={500} required />
  * ```
  */
 export const Textarea = React.forwardRef<

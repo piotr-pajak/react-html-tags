@@ -1,6 +1,6 @@
 {
   "name": "@olympo/react-html-tags",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Type-safe React components for all HTML tags with full native attribute support",
   "type": "module",
   "main": "./dist/index.js",

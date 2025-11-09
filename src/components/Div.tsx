@@ -2,18 +2,27 @@
  * A type-safe React wrapper for the HTML `<div>` element.
  *
  * @remarks
- * This component accepts all native HTML div attributes and forwards refs to the underlying DOM element.
- * It provides full TypeScript support for all standard div properties including className, style, onClick, etc.
+ * Generic container with no semantic meaning - use for layout and grouping.
+ *
+ * - No semantic meaning - purely for styling and layout
+ * - Prefer semantic elements (Section, Article, Nav) when appropriate
+ * - Use for grouping elements that don't have a better semantic container
+ *
+ * **Pro Tips:**
+ * - Avoid "div soup" - use semantic HTML when possible
+ * - Use for flexbox/grid layouts and styling containers
+ * - Consider Section, Article, or Nav for meaningful content groups
  *
  * @example
  * ```tsx
- * <Div>
+ * <Div className="container">
  *   <H1>Welcome</H1>
  *   <P>Content goes here</P>
  * </Div>
  *
- * <Div ref={divRef}>
- *   Scrollable content
+ * <Div ref={divRef} style={{ display: 'flex', gap: '1rem' }}>
+ *   <Div>Column 1</Div>
+ *   <Div>Column 2</Div>
  * </Div>
  * ```
  */

@@ -2,20 +2,23 @@
  * A type-safe React wrapper for the HTML `<input>` element.
  *
  * @remarks
- * This component accepts all native HTML input attributes and forwards refs to the underlying DOM element.
- * It provides full TypeScript support for all standard input properties including type, value, onChange, placeholder, etc.
+ * Interactive form input control.
+ *
+ * - Always pair with a Label for accessibility
+ * - Use appropriate type attribute (email, number, tel, etc.)
+ * - Use required, pattern, min, max for HTML5 validation
+ *
+ * **Pro Tips:**
+ * - Use semantic types (email, tel, url)
+ * - Add aria-label if no visible label
  *
  * @example
  * ```tsx
- * <Input
- *   type="email"
- *   value={email}
- *   onChange={(event) => setEmail(event.target.value)}
- *   placeholder="Enter your email"
- *   required
- * />
+ * <Input type="email" required placeholder="you@example.com" />
  *
- * <Input type="checkbox" checked={agreed} onChange={(event) => setAgreed(event.target.checked)} />
+ * <Input type="number" min={0} max={100} step={5} />
+ *
+ * <Input type="checkbox" checked={value} onChange={(e) => setValue(e.target.checked)} />
  * ```
  */
 export const Input = React.forwardRef<

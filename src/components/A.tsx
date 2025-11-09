@@ -2,16 +2,23 @@
  * A type-safe React wrapper for the HTML `<a>` element.
  *
  * @remarks
- * This component accepts all native HTML anchor attributes and forwards refs to the underlying DOM element.
- * It provides full TypeScript support for all standard anchor properties including href, target, rel, etc.
+ * Hyperlink.
+ *
+ * - Use target="_blank" with rel="noopener noreferrer" for security
+ * - Provide meaningful link text (not "click here")
+ * - Use relative URLs when possible
+ *
+ * **Pro Tips:**
+ * - Make link text descriptive
+ * - Use rel="noopener" with target="_blank"
  *
  * @example
  * ```tsx
  * <A href="/about">About Us</A>
  *
- * <A href="https://example.com" target="_blank" rel="noopener noreferrer">
- *   External Link
- * </A>
+ * <A href="https://example.com" target="_blank" rel="noopener noreferrer">External Link</A>
+ *
+ * <A href="#section">Jump to section</A>
  * ```
  */
 export const A = React.forwardRef<

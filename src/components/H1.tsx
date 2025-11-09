@@ -2,16 +2,19 @@
  * A type-safe React wrapper for the HTML `<h1>` element.
  *
  * @remarks
- * This component accepts all native HTML h1 attributes and forwards refs to the underlying DOM element.
- * It provides full TypeScript support for all standard heading properties including className, style, etc.
+ * Main heading - highest level of document hierarchy.
+ *
+ * - Should be used once per page for the main title
+ * - Screen readers use headings for navigation
+ * - Search engines give more weight to H1 content
+ *
+ * **Pro Tips:**
+ * - Only use one H1 per page
+ * - Follow with H2 for subsections
  *
  * @example
  * ```tsx
- * <H1>Page Title</H1>
- *
- * <H1 className="hero-title">
- *   Welcome to Our Website
- * </H1>
+ * <H1>Welcome to Our Website</H1>
  * ```
  */
 export const H1 = React.forwardRef<

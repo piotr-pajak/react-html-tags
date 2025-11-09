@@ -217,28 +217,33 @@ We use the following labels to organize issues and pull requests:
 - 🏷️ **`dependencies`** - Dependency updates or issues
 - 🏷️ **`examples`** - Related to example code or documentation examples
 
-## Component Priority List
+## Component Status
 
-We're working towards supporting all standard HTML5 elements. Here's the priority order:
+✅ **All 110+ standard HTML5 elements are now implemented!**
 
-### High Priority (Common Elements)
-- ✅ `<div>`, `<span>`, `<p>`
-- ✅ `<button>`, `<input>`, `<textarea>`, `<form>`, `<label>`
-- ✅ `<a>`, `<h1>`
-- 🔲 `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
-- 🔲 `<ul>`, `<ol>`, `<li>`
-- 🔲 `<img>`, `<video>`, `<audio>`
+### Implemented Components
 
-### Medium Priority (Semantic Elements)
-- 🔲 `<section>`, `<article>`, `<header>`, `<footer>`, `<nav>`, `<main>`, `<aside>`
-- 🔲 `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<td>`, `<th>`
-- 🔲 `<select>`, `<option>`
+All modern HTML5 elements are fully supported, including:
 
-### Low Priority (Less Common)
-- 🔲 `<figure>`, `<figcaption>`
-- 🔲 `<details>`, `<summary>`
-- 🔲 `<dialog>`
-- 🔲 And more...
+- **Document Structure**: Article, Aside, Div, Footer, Header, Main, Nav, Section, etc.
+- **Headings**: H1-H6
+- **Text Formatting**: Abbr, B, Code, Em, I, Mark, Small, Strong, etc.
+- **Lists**: Ul, Ol, Li, Dl, Dt, Dd, Menu
+- **Forms**: Button, Input, Select, Textarea, Form, Label, Fieldset, etc.
+- **Tables**: Table, Thead, Tbody, Tr, Td, Th, Caption, etc.
+- **Media**: Audio, Video, Img, Picture, Canvas, Svg
+- **Interactive**: Details, Summary, Dialog
+- **And many more!**
+
+### Future Enhancements
+
+While all HTML elements are implemented, we welcome contributions for:
+
+- 🧪 Test coverage improvements
+- 📚 Documentation enhancements
+- 🎨 Usage examples
+- 🐛 Bug fixes and type improvements
+- 🔧 Build system optimizations
 
 ## Code of Conduct
 
@@ -261,7 +266,7 @@ We're working towards supporting all standard HTML5 elements. Here's the priorit
 
 If you have questions about contributing, please:
 
-1. Check existing [GitHub Issues](https://github.com/olympo/react-html-tags/issues)
+1. Check existing [GitHub Issues](https://github.com/piotr-pajak/react-html-tags/issues)
 2. Open a new issue with the `question` label
 3. Reach out to the maintainers
 

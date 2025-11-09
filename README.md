@@ -65,20 +65,56 @@ function MyComponent() {
 
 ## Available Components
 
-Currently available components:
+**All 110+ HTML5 elements are now supported!** 🎉
 
-- `<A>` - Wraps `<a>` (anchor/link)
-- `<Button>` - Wraps `<button>`
-- `<Div>` - Wraps `<div>`
-- `<Form>` - Wraps `<form>`
-- `<H1>` - Wraps `<h1>` (heading)
-- `<Input>` - Wraps `<input>`
-- `<Label>` - Wraps `<label>`
-- `<P>` - Wraps `<p>` (paragraph)
-- `<Span>` - Wraps `<span>`
-- `<Textarea>` - Wraps `<textarea>`
+### Document Structure & Semantic Elements
+`<Article>`, `<Aside>`, `<Div>`, `<Footer>`, `<Header>`, `<Hgroup>`, `<Main>`, `<Nav>`, `<Search>`, `<Section>`
 
-More components will be added in future releases following the same pattern.
+### Headings
+`<H1>`, `<H2>`, `<H3>`, `<H4>`, `<H5>`, `<H6>`
+
+### Text Content & Formatting
+`<Abbr>`, `<Address>`, `<B>`, `<Bdi>`, `<Bdo>`, `<Blockquote>`, `<Cite>`, `<Code>`, `<Data>`, `<Del>`, `<Dfn>`, `<Em>`, `<I>`, `<Ins>`, `<Kbd>`, `<Mark>`, `<P>`, `<Pre>`, `<Q>`, `<S>`, `<Samp>`, `<Small>`, `<Span>`, `<Strong>`, `<Sub>`, `<Sup>`, `<Time>`, `<U>`, `<Var>`
+
+### Lists
+`<Dd>`, `<Dl>`, `<Dt>`, `<Li>`, `<Menu>`, `<Ol>`, `<Ul>`
+
+### Links & Navigation
+`<A>`, `<Area>`, `<Link>`, `<Map>`
+
+### Forms & Input
+`<Button>`, `<Datalist>`, `<Fieldset>`, `<Form>`, `<Input>`, `<Label>`, `<Legend>`, `<Meter>`, `<Optgroup>`, `<Option>`, `<Output>`, `<Progress>`, `<Select>`, `<Textarea>`
+
+### Tables
+`<Caption>`, `<Col>`, `<Colgroup>`, `<Table>`, `<Tbody>`, `<Td>`, `<Tfoot>`, `<Th>`, `<Thead>`, `<Tr>`
+
+### Media & Graphics
+`<Audio>`, `<Canvas>`, `<Img>`, `<Picture>`, `<Source>`, `<Svg>`, `<Track>`, `<Video>`
+
+### Embedded Content
+`<Embed>`, `<Iframe>`, `<Object>`, `<Param>`, `<Portal>`
+
+### Interactive Elements
+`<Details>`, `<Dialog>`, `<Summary>`
+
+### Ruby Annotations
+`<Rp>`, `<Rt>`, `<Ruby>`
+
+### Figures
+`<Figcaption>`, `<Figure>`
+
+### Breaks & Separators
+`<Br>`, `<Hr>`, `<Wbr>`
+
+### Web Components & Special
+`<Noscript>`, `<Slot>`, `<Template>`
+
+All components support:
+- ✅ Full TypeScript typing via `JSX.IntrinsicElements`
+- ✅ Ref forwarding to underlying DOM elements
+- ✅ All native HTML attributes
+- ✅ Event handlers with proper typing
+- ✅ Comprehensive JSDoc documentation
 
 ## TypeScript Benefits
 
@@ -148,12 +184,11 @@ MIT
 
 ## Roadmap
 
-Future versions will include components for all standard HTML5 elements:
+✅ **v0.1.0** - All standard HTML5 elements implemented (110+ components)
 
-- Semantic elements: `<Section>`, `<Article>`, `<Header>`, `<Footer>`, `<Nav>`, `<Main>`, etc.
-- Form elements: `<Form>`, `<Label>`, `<Select>`, `<Textarea>`, etc.
-- Text elements: `<P>`, `<H1>`-`<H6>`, `<A>`, etc.
-- Media elements: `<Img>`, `<Video>`, `<Audio>`, etc.
-- Table elements: `<Table>`, `<Tr>`, `<Td>`, `<Th>`, etc.
-- List elements: `<Ul>`, `<Ol>`, `<Li>`, etc.
-- And more...
+Future versions:
+- 📦 Publish to npm registry
+- 📚 Enhanced documentation site
+- 🧪 Comprehensive test suite
+- 🎨 Optional styled-components integration
+- 🔧 Additional utility types and helpers

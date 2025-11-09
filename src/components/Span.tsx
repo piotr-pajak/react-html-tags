@@ -2,12 +2,22 @@
  * A type-safe React wrapper for the HTML `<span>` element.
  *
  * @remarks
- * This component accepts all native HTML span attributes and forwards refs to the underlying DOM element.
- * It provides full TypeScript support for all standard span properties including className, style, onClick, etc.
+ * Generic inline container - like Div but for inline content.
+ *
+ * - No semantic meaning - purely for styling inline content
+ * - Doesn't break text flow (inline element)
+ * - Use Strong for importance, Em for emphasis (semantic alternatives)
+ *
+ * **Pro Tips:**
+ * - Use for styling parts of text without semantic meaning
+ * - Great for icons, badges, inline status indicators
+ * - Prefer Strong/Em when the styling has semantic meaning
  *
  * @example
  * ```tsx
- * <Span className="badge">New</Span>
+ * <P>Price: <Span className="highlight">${price}</Span></P>
+ *
+ * <Span className="badge badge-new">New</Span>
  *
  * <Span style={{ color: 'red', fontWeight: 'bold' }}>
  *   Error: {errorMessage}
