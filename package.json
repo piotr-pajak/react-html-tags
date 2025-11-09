@@ -1,0 +1,55 @@
+{
+  "name": "@olympo/react-html-tags",
+  "version": "0.1.0",
+  "description": "Type-safe React components for all HTML tags with full native attribute support",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm && tsc --emitDeclarationOnly --declaration --declarationDir dist",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "react",
+    "html",
+    "components",
+    "typescript",
+    "jsx",
+    "tags"
+  ],
+  "author": {
+    "name": "Piotr Pająk",
+    "url": "https://www.piotrpajak.pl/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piotr-pajak/react-html-tags"
+  },
+  "bugs": {
+    "url": "https://github.com/piotr-pajak/react-html-tags/issues"
+  },
+  "homepage": "https://github.com/piotr-pajak/react-html-tags#readme",
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "typescript": "^5.7.2"
+  }
+}

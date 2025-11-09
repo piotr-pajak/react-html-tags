@@ -1,0 +1,38 @@
+# Source files
+src/
+
+# Development files
+docs/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Configuration files
+tsconfig.json
+.gitignore
+bun.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git/
+.gitattributes
+
+# Documentation (keep README.md)
+CLAUDE.md
+
+# Build artifacts (keep dist/)
+node_modules/
+
+# Only include dist/ in the published package
