@@ -1,3 +1,14 @@
+<div align="center">
+<a href="https://www.npmjs.com/package/@olympo/react-html-tags" target="_parent">
+  <img alt="" src="https://img.shields.io/npm/dm/@olympo/react-html-tags.svg" alt="npm downloads" />
+</a>
+
+ <a href="https://github.com/piotr-pajak/react-html-tags/stargazers" target="_parent">
+  <img alt="" src="https://img.shields.io/github/stars/piotr-pajak/react-html-tags.svg?style=social&label=Star" alt="GitHub stars" />
+</a>
+</div>
+
+
 # @olympo/react-html-tags
 
 Type-safe React components for all HTML tags with full native attribute support.
