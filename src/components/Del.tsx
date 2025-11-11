@@ -1,3 +1,5 @@
+import React from 'react';
+
 /**
  * A type-safe React wrapper for the HTML `<del>` element.
  *
